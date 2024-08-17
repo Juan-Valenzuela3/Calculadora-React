@@ -1,42 +1,75 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  height: 100vh;
+  margin: 0;
+  background-color:  #5d6d7e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  grid-gap: 2px;
+  background-color: #fff;
+  height: 400px;
+  width: 306px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#display {
+  display: block;
+  grid-column: span 4;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color:  #212f3c;
+  color: #fff;
 }
 
-.card {
-  padding: 2em;
+#clear {
+    grid-column: span 2;
 }
 
-.read-the-docs {
-  color: #888;
+#eguals {
+    grid-column: span 2;
+    
 }
+
+#zero {
+    grid-column: span 2;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    background-color:  #212f3c;
+    color: #fff;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: #212f3c;
+}
+
+#menos1 {
+  background-color: #212f3c;
+}
+
+icon {
+  color: white;
+}
+
